@@ -70,4 +70,5 @@ pip install gpt4all "gpt4all[cuda]" nomic numpy psycopg2-binary
 
 - Implementar o uso da biblioteca [LangChain](https://python.langchain.com/).
 - Implementar [*vector store*](https://python.langchain.com/docs/concepts/vectorstores/).
+  - [PGVector](https://python.langchain.com/docs/integrations/vectorstores/pgvector/): An implementation of LangChain vectorstore abstraction using postgres as the backend and utilizing the pgvector extension.
 - Implementar [*Retrieval augmented generation (RAG)*](https://python.langchain.com/docs/concepts/rag/).
