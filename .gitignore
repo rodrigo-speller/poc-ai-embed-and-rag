@@ -1,0 +1,13 @@
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pythin virtual environment
+.venv/
+
+### Office ###
+~$*.xlsx
+~$*.docx
+~$*.pptx

@@ -1,0 +1,21 @@
+name: "poc-ai-embed-and-rag"
+services:
+  postgres:
+    build:
+      dockerfile: postgres.Dockerfile
+    user: 1000:1000
+    environment:
+      - POSTGRES_PASSWORD=local
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data:/var/lib/postgresql/data:rw
+
+  pgadmin:
+    image: "dpage/pgadmin4:8.14"
+    environment:
+      - PGADMIN_CONFIG_ALLOW_SPECIAL_EMAIL_DOMAINS=['localhost']
+      - PGADMIN_DEFAULT_EMAIL=root@db.localhost
+      - PGADMIN_DEFAULT_PASSWORD=local
+    ports:
+      - 8080:80
