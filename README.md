@@ -65,3 +65,9 @@ pip install gpt4all "gpt4all[cuda]" nomic numpy psycopg2-binary
 - [4-compute-documents-vectors.py](./scripts/4-compute-documents-vectors.py)
 - [5-generate-questions.py](./scripts/5-generate-questions.py)
 - [6-compute-questions-vectors.py](./scripts/6-compute-questions-vectors.py)
+
+## Próximos passos
+
+- Implementar o uso da biblioteca [LangChain](https://python.langchain.com/).
+- Implementar [*vector store*](https://python.langchain.com/docs/concepts/vectorstores/).
+- Implementar [*Retrieval augmented generation (RAG)*](https://python.langchain.com/docs/concepts/rag/).
